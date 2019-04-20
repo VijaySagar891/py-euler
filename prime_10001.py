@@ -16,3 +16,9 @@ for i in range(10001):
     x = prime_gen.next()
 else:
     print x
+
+for i, p in enumerate(prime_generator()):
+    if i == 10000:
+        print p
+    elif i > 10000:
+        break
